@@ -97,6 +97,30 @@
                     autoplay
                     muted
                     playsinline
+                ></video> 
+                <video
+                    id="vid6"
+                    src="assets/asset6.mp4"
+                    preload="auto"
+                    response-type="arraybuffer"
+                    loop
+                    crossorigin
+                    webkit-playsinline
+                    autoplay
+                    muted
+                    playsinline
+                ></video> 
+                <video
+                    id="vid7"
+                    src="assets/asset7.mp4"
+                    preload="auto"
+                    response-type="arraybuffer"
+                    loop
+                    crossorigin
+                    webkit-playsinline
+                    autoplay
+                    muted
+                    playsinline
                 ></video>
                 
               
@@ -280,6 +304,58 @@
             >
                 <a-video
                     src="#vid5"
+                    scale="1 1 1"
+                    position="0 0.1 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+            </a-marker>
+
+            <!-- Osmose 1 --> 
+
+            <a-marker
+                type="pattern"
+                preset="custom"
+                url="assets/marker_osmose1.patt"
+                videohandler
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker_osmose1"
+            >
+                <a-video
+                    src="#vid6"
+                    scale="1 1 1"
+                    position="0 0.1 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+            </a-marker>
+
+            <!-- Osmose 2 --> 
+
+            <a-marker
+                type="pattern"
+                preset="custom"
+                url="assets/marker_osmose2.patt"
+                videohandler
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker_osmose2"
+            >
+                <a-video
+                    src="#vid7"
                     scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
