@@ -229,7 +229,7 @@
                 ></a-video>
             </a-marker>
             
-            <!-- Liquid Views 2 pd: vid 9 are moving faces --> 
+            <!-- Liquid Views 2 pd: vid 9 are moving faces. This is part of the image dyptich of liquid faces --> 
 
             <a-marker
                 type="pattern"
@@ -256,6 +256,30 @@
             </a-marker> 
             
             <!-- Liquid Views 3 -->
+             
+            <a-marker
+                type="pattern"
+                preset="custom"
+                url="assets/marker_liquidfaces.patt"
+                videohandler
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance="0.01"
+                smoothThreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker_liquidfaces2"
+            >
+                <a-video
+                    src="#vid9"
+                    scale="1 1 1"
+                    position="0 0.1 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+            </a-marker> 
 
 
             
@@ -305,7 +329,7 @@
                 id="marker_journey"
             >
                 <a-video
-                    src="#vid9"
+                    src="#vid5"
                     scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
@@ -331,7 +355,7 @@
                 id="marker_journeyv2"
             >
                 <a-video
-                    src="#vid9"
+                    src="#vid5"
                     scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
